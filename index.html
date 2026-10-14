@@ -1,27 +1,92 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Karen Wong, Educational Data Specialist</title>
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Karen Wong!</h1>
-				<p>I'm a <i>Educational Data Specialist</i>. <a href="/about">Read more about my life...</a></p>
-			</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:karenwongkithan@gmail.com">email</a></li>
-			</ul>
-		</footer>
-	</body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karen Wong | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col justify-between">
+
+  <!-- Navbar -->
+  <header class="w-full bg-white/80 backdrop-blur border-b border-slate-200 sticky top-0 z-50">
+    <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="/" class="font-bold text-lg text-slate-900 tracking-tight">Karen Wong</a>
+      <nav class="flex gap-6 text-sm font-medium text-slate-600">
+        <a href="#about" class="hover:text-indigo-600 transition">About</a>
+        <a href="#projects" class="hover:text-indigo-600 transition">Projects</a>
+        <a href="#skills" class="hover:text-indigo-600 transition">Skills</a>
+        <a href="mailto:your-email@example.com" class="hover:text-indigo-600 transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="max-w-4xl mx-auto px-6 py-16 flex-grow">
+    <div class="space-y-4">
+      <span class="inline-block px-3 py-1 bg-indigo-50 text-indigo-700 text-xs font-semibold rounded-full uppercase tracking-wider">
+        Portfolio & Projects
+      </span>
+      <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+        Turning data into actionable insights & modern prototypes.
+      </h1>
+      <p class="text-lg text-slate-600 max-w-2xl leading-relaxed">
+        Hi, I'm Karen. I lead analytics initiatives, build interactive dashboards, and prototype data-driven web applications.
+      </p>
+      
+      <!-- Social / Action Buttons -->
+      <div class="flex items-center gap-4 pt-2">
+        <a href="https://github.com/karenwkh" target="_blank" class="px-4 py-2 bg-slate-900 text-white text-sm font-medium rounded-lg hover:bg-slate-800 transition flex items-center gap-2">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+        <a href="mailto:your-email@example.com" class="px-4 py-2 bg-white text-slate-700 border border-slate-300 text-sm font-medium rounded-lg hover:bg-slate-50 transition flex items-center gap-2">
+          <i class="fa-regular fa-envelope"></i> Get in Touch
+        </a>
+      </div>
+    </div>
+
+    <!-- Featured Projects Grid -->
+    <section id="projects" class="mt-20">
+      <h2 class="text-2xl font-bold text-slate-900 mb-6">Featured Work</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <!-- Project Card 1 -->
+        <div class="bg-white rounded-xl border border-slate-200 p-6 hover:shadow-md transition">
+          <div class="flex justify-between items-start mb-3">
+            <h3 class="font-semibold text-slate-900 text-lg">Analytics & Dashboard Suite</h3>
+            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">Power BI / Fabric</span>
+          </div>
+          <p class="text-slate-600 text-sm mb-4">
+            Interactive reporting system with automated ETL pipelines, dynamic visualizations, and executive KPIs.
+          </p>
+          <a href="#" class="text-indigo-600 text-sm font-medium hover:underline inline-flex items-center gap-1">
+            View Project Details &rarr;
+          </a>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="bg-white rounded-xl border border-slate-200 p-6 hover:shadow-md transition">
+          <div class="flex justify-between items-start mb-3">
+            <h3 class="font-semibold text-slate-900 text-lg">Interactive Web Prototypes</h3>
+            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">React / D3.js</span>
+          </div>
+          <p class="text-slate-600 text-sm mb-4">
+            Custom simulation and assessment tooling designed to support competency tracking and dynamic learning data.
+          </p>
+          <a href="#" class="text-indigo-600 text-sm font-medium hover:underline inline-flex items-center gap-1">
+            Explore Demo &rarr;
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 py-8 bg-white text-center text-xs text-slate-500">
+    <p>&copy; 2026 Karen Wong. Built with GitHub Pages.</p>
+  </footer>
+
+</body>
 </html>
